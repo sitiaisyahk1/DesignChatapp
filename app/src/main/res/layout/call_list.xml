@@ -14,7 +14,8 @@
         android:layout_marginTop="@dimen/_15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_image" />
+        app:srcCompat="@drawable/background_image"
+        android:contentDescription="@string/image" />
 
     <ImageView
         android:id="@+id/iv_profile_chat"
@@ -24,10 +25,11 @@
         app:layout_constraintEnd_toEndOf="@+id/tv_background_img"
         app:layout_constraintStart_toStartOf="@+id/tv_background_img"
         app:layout_constraintTop_toTopOf="@+id/tv_background_img"
-        app:srcCompat="@drawable/profil" />
+        app:srcCompat="@drawable/profil"
+        android:contentDescription="@string/image" />
 
     <TextView
-        android:id="@+id/tv_chat_name"
+        android:id="@+id/tv_call_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_7dp"
@@ -41,33 +43,35 @@
         app:layout_constraintTop_toTopOf="@+id/tv_background_img" />
 
     <TextView
-        android:id="@+id/tv_chat_message"
-        android:layout_width="290dp"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="2"
-        android:text="@string/message"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:text="@string/time"
         android:textColor="#2D303E"
         android:textSize="@dimen/_14sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_background_img"
-        app:layout_constraintStart_toStartOf="@+id/tv_chat_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_chat_name" />
+        app:layout_constraintStart_toStartOf="@+id/tv_call_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_call_name" />
 
     <ImageView
         android:id="@+id/iv_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_25dp"
-        app:layout_constraintStart_toStartOf="@+id/tv_chat_message"
-        app:layout_constraintTop_toBottomOf="@+id/tv_chat_message"
+        app:layout_constraintStart_toStartOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
         app:srcCompat="@drawable/line" />
 
-    <TextView
-        android:id="@+id/tv_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/time"
-        android:textSize="@dimen/_14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_chat_name"
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:background="@drawable/circle_call"
+        android:drawableTop="@drawable/videocall_icon"
+        android:paddingTop="@dimen/_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background_img"
         app:layout_constraintEnd_toEndOf="@+id/iv_line"
-        app:layout_constraintTop_toTopOf="@+id/tv_chat_name" />
+        app:layout_constraintTop_toTopOf="@+id/tv_background_img" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
