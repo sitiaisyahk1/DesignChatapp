@@ -163,7 +163,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list_chat"
         android:layout_width="409dp"
-        android:layout_height="564dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15dp"
         app:layout_constraintEnd_toEndOf="@+id/iv_view_all"
         app:layout_constraintStart_toStartOf="@+id/btn_add_story"

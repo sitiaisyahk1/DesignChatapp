@@ -12,4 +12,8 @@
     <string name="name">Name</string>
     <string name="message">This is message for her or him</string>
     <string name="time">2 min ago</string>
+    <string name="calls">Calls</string>
+    <string name="setting">Setting</string>
+    <string name="cetup">CetUp</string>
+    <string name="call">Call</string>
 </resources>
